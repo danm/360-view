@@ -1,5 +1,6 @@
 # 360-view
 360 Proof of concept
+https://danm.github.io/360-viewer/
 
 ## Development
 
