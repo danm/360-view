@@ -7,7 +7,7 @@ https://danm.github.io/360-viewer/
 There are a couple of things you need add to your code to integrate the 360 viewer
 
 ### Create API Key
-
+[Get a Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 ### Add async defer
 ```html
