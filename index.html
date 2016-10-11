@@ -19,9 +19,18 @@
       background-color: #BC2024;
     }
 
+    #header .title {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 24px;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
     #street-view {
       background-color: black;
-      height: 30%;
+      height: 550px;
       width: 100%;
     }
 
@@ -31,7 +40,7 @@
     }
 
     .banner {
-      width: 800px;
+      width: 960px;
       height: 210px;
       padding-top:12px;
       padding-bottom:12px;
@@ -66,7 +75,7 @@
 </head>
 <body>
   <div id="header">
-    <h1>Website</h1>
+    <div class="title">Website</div>
   </div>
   <div id="street-view"></div>
 
@@ -108,8 +117,8 @@
       panorama = new google.maps.StreetViewPanorama(
       document.getElementById('street-view'),
         {
-          position: {lat: 51.5121754, lng: -0.2120833},
-          pov: {heading: 0, pitch: 0},
+          position: {lat: 51.5122851, lng: -0.212135},
+          pov: {heading: 70, pitch: 0},
           zoom: 1,
   				panControl: false,
           zoomControl: false,
