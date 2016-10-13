@@ -1,0 +1,19 @@
+{
+  "name": "360-viewer",
+  "version": "1.0.0",
+  "description": "360 Proof of concept",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danm/360-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danm/360-view/issues"
+  },
+  "homepage": "https://github.com/danm/360-view#readme"
+}

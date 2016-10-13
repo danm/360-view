@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Daniel Morrison">
+    <title>Website</title>
+		<style>
+
+			body {
+				padding: 0px;
+				margin:0px;
+			}
+
+			#street-view {
+				height:100%;
+				width:100%;
+				position: absolute;
+				background-color: black;
+			}
+
+		</style>
+  </head>
+  <body>
+    	<div id="street-view"></div>
+		</div>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8p20IcBCK8e1Z-9buwD14MW-Wj7J1sZs&callback=initialize"></script>
+	  <script>
+	    var panorama;
+	    function initialize() {
+	      panorama = new google.maps.StreetViewPanorama(
+	      document.getElementById('street-view'),
+	        {
+	          position: {lat: 51.5121667, lng: -0.2120833},
+	          pov: {heading: 20, pitch: 0},
+	          zoom: 0.5,
+	  				panControl: false,
+	          zoomControl: false,
+	          addressControl: false,
+	          fullscreenControl: false,
+	          motionTrackingControl: false,
+	          enableCloseButton: false,
+	          linksControl: true
+	        }
+	      );
+	    }
+	  </script>
+  </body>
+</html>
